@@ -9,3 +9,6 @@
     lalalala
 </body>
 </html>
+<?php
+    SELECT * FROM `news`
+?>
