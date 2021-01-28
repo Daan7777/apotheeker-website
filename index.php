@@ -7,6 +7,7 @@
 </head>
 <body>
     lalalala
+    <br>
 </body>
 </html>
 
@@ -15,12 +16,29 @@
     $dbuser = "root";
     $dbpass = "";
     $db = "apotheek";
-    $conn = new mysqli($dbhost, $dbuser, $dbpass,$db) or die("Connect failed: %s\n". $conn -> error);
-    
-    return $conn;
+   
+  // Create connection
+$conn = new mysqli($dbhost, $dbuser, $dbpass, $db);
+// Check connection
+if ($conn->connect_error) {
+  die("Connection failed: " . $conn->connect_error);
+}
     
   
-function CloseCon($conn)
+
+    $sql = "SELECT * from news";
+    $result = $conn->query($sql);
+    
+    if ($result->num_rows > 0) {
+      // output data of each row
+      while($row = $result->fetch_assoc()) {
+        echo " " . $row["Title"].  "<br>";
+      }
+    } else {
+      echo "0 results";
+    }
+  
+
 {
 $conn -> close();
 }
