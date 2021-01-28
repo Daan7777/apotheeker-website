@@ -32,7 +32,7 @@ if ($conn->connect_error) {
     if ($result->num_rows > 0) {
       // output data of each row
       while($row = $result->fetch_assoc()) {
-        echo " " . $row["Title"].  "<br>";
+        echo " " . $row["Title"].  $row["Information"]. "<br>";
       }
     } else {
       echo "0 results";
