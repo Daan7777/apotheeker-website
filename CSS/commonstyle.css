@@ -1,0 +1,74 @@
+a:link {
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  
+  a:visited {
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:hover {
+      color: rgb(0, 0, 0);
+      background-color: transparent;
+      text-decoration: underline;
+      text-overflow: clip;
+  }
+  
+  a:active {
+      color: rgb(255, 0, 0);
+      background-color: transparent;
+      text-decoration: underline;
+  }
+
+  body {
+     background-image: url(../pictures/apotheek.png);
+     background-repeat: no-repeat;
+     background-size: 400px 220px;
+     background-position: left top;
+     background-color: white;
+     max-width: 1024px;
+     margin: auto;
+  }
+
+  h2 {
+      margin-top: 310px;
+      outline-style: auto;
+      outline-width: 100cm;
+      background-color: transparent;
+      border-width: 100px;
+      color: black;
+  }
+  
+  .nav {
+      background-color: transparent;
+      text-align: center;
+      vertical-align: middle;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 20px;
+      word-spacing: 75px;
+  }    
+  .discord {
+      text-align: center;
+  }
+   .mid {
+      width: 800px;
+      margin: 20px;
+      text-align: center;
+      margin: auto;
+      font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .mid a {
+      font-size: 25px;
+  }
+
+  .nav a{
+      border: 2px solid white;
+      border-radius: 5px;
+      padding: 5px;
+  }
+  
