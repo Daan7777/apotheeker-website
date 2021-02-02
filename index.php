@@ -27,6 +27,11 @@
         <img src="pictures/slideshowfoto3.jpg" alt="Slide 2" />
         <img src="pictures/slideshowfoto4.jpg" alt="Slide 1" />
       </div>
+      <div class="nav2">
+        <a href="haalservice.php">Haalservice</a>
+        <a href="medicijnoverzicht.php">medicijneoverzicht</a>
+        <a href="inschrijven.php">inschrijven</a>
+      </div>  
 </body>
 </html>
 
