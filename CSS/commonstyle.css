@@ -25,10 +25,6 @@ a:link {
   }
 
   body {
-     background-image: url(../pictures/apotheek.png);
-     background-repeat: no-repeat;
-     background-size: 400px 220px;
-     background-position: left top;
      background-color: white;
      max-width: 1024px;
      margin: auto;
@@ -51,9 +47,7 @@ a:link {
       font-size: 20px;
       word-spacing: 75px;
   }    
-  .discord {
-      text-align: center;
-  }
+
    .mid {
       width: 800px;
       margin: 20px;
@@ -70,5 +64,14 @@ a:link {
       border: 2px solid white;
       border-radius: 5px;
       padding: 5px;
+  }
+
+  .logo{
+    background-image: url(/pictures/apotheek.png);
+    background-repeat: no-repeat;
+    margin-top: 80px;
+    margin-bottom: 100px;
+    margin-right: 150px;
+    margin-left: 60px;
   }
   

@@ -4,10 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="CSS/commonstyle.css">
 </head>
 <body>
-    lalalala
-    <br>
+<div class="logo">
+</div>
+<div class="menu">
+<h2>menu</h2>
+</div>
+    <div class="nav">
+    <a href="index.php">Home</a>
+        <a href="voorlichting.php">Voorlichting</a>
+        <a href="inlogscherm.php">Inloggen</a>
+        <a href="service.php">Service</a>
+</div>
+    <div class="slideshow">
+    <img class="mySlides w3-animate-fading" src="slideshowfoto1">
+    <img class="mySlides w3-animate-fading" src="slideshowfoto2">
+    <img class="mySlides w3-animate-fading" src="slideshowfoto3">
+    <img class="mySlides w3-animate-fading" src="slideshowfoto4">
+</div>  
+    <div class="mid">
+        <h2>
+        </h2>
+    </div>
 </body>
 </html>
 
