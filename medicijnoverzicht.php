@@ -21,17 +21,7 @@
 
     <?php
 
-$dbhost = "localhost";
-$dbuser = "root";
-$dbpass = "";
-$db = "apotheek";
-
-// Create connection
-$conn = new mysqli($dbhost, $dbuser, $dbpass, $db);
-// Check connection
-if ($conn->connect_error) {
-die("Connection failed: " . $conn->connect_error);
-}
+include("includes/databaselink.php");
         $sql = "SELECT medicineid, medicinename  FROM medicines";
         $result = $conn->query($sql);
         
