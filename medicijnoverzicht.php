@@ -16,8 +16,5 @@
     </div>
 
     <div class="mid">
-        <h2>Op deze website kan je uitleg vinden over onze bot,<br> 
-            dus hoe die werkt en hoe je hem kan downloaden.<br>
-            Via het navigatie menu kunt u ons ook contacteren
         </h2>
     </div>
