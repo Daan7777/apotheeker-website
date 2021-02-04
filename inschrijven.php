@@ -7,15 +7,33 @@
     <link rel="stylesheet" href="css/commonstyle.css">
 </head>
 <body> 
-    <img class="logo" src="pictures/banner.jpg">
-    <div class="menu">    <h2>menu</h2> </div>
-        <div class="nav">
-        <a href="index.php">Home</a>
-        <a href="voorlichting.php">Voorlichting</a>
-        <a href="inlogscherm.php">Inloggen</a>
-        <a href="service.php">Service</a>
-    </div>
-        </body>
+<div class="container">
+  <form action="action_page.php" method="post">
+
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="australia">Australia</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+    </select>
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+
+  </form>
+</div> 
     <div class="mid">
         </h2>
     </div>
+    <?php
+    
+    include("includes/databaselink.php");
+    ?>
