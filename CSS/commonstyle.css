@@ -90,6 +90,7 @@ a:link {
   font-size: 30px;
   border: 1px black;
   border-radius: 5px;
+  vertical-align: middle;
 }
 
 .route {
