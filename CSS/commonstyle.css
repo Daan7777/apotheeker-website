@@ -86,7 +86,10 @@ a:link {
 }   
 
 .nav2 a {
-  color: white;
+  color: black; 
+  font-size: 30px;
+  border: 1px black;
+  border-radius: 5px;
 }
 
 .route {

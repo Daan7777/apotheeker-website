@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/commonstyle.css">
 </head>
 <body>
-    <img class="logo" src="pictures/apotheek.png">
+    <img class="logo" src="pictures/banner.jpg">
     <div class="menu">
         <h2>menu</h2>
     </div>
