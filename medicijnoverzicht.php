@@ -28,7 +28,7 @@ include("includes/databaselink.php");
         if ($result->num_rows > 0) {
             // output data of each row
             while($row = $result->fetch_assoc()) {
-                echo "<br> id: ". $row["medicineid"]. " - Name: ". $row["medicinename"]. "<br>";
+                echo "<br> Name: ". $row["medicinename"]. "<br>";
             }
         } else {
             echo "BIG FAT error";

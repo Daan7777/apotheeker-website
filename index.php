@@ -28,7 +28,7 @@
       </div>
       <div class="mid">
         <p>
-          Onze service
+          Onze service!
       </p>
     </div>
       <div class="nav2">
