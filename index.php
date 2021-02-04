@@ -28,7 +28,7 @@
       </div>
       <div class="mid">
         <p>
-          Onze service!
+          Onze service
       </p>
     </div>
       <div class="nav2">
@@ -38,6 +38,9 @@
         </div>
         <div class="openingstijden">
           <p>Openingstijden</p>
+        </div>
+          <div class="adres">
+          <p>Adres</p>
         </div>  
 </body>
 </html>

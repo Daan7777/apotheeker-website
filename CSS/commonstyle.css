@@ -91,6 +91,8 @@ a:link {
   border: 1px black;
   border-radius: 5px;
   vertical-align: middle;
+  width: 322px;
+  height: 150px;
 }
 
 .route {
@@ -152,4 +154,5 @@ a:link {
   border-radius: 5px;
   width: 250px;
   margin-top: 10px;
+  margin-right: 100px;
 }
