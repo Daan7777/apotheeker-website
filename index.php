@@ -34,7 +34,7 @@
       <div class="nav2">
         <a href="haalservice.php"> Haalservice </a>
         <a href="medicijnoverzicht.php">Medicijnoverzicht</a>
-        <a href="contact.php">Formulier </a>
+        <a href="inschrijven.php">Formulier </a>
         </div>
         <div class="openingstijden">
           <p>Openingstijden:  Maandag tot vrijdag van: 8:00-18:00</p>
