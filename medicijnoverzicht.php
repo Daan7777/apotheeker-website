@@ -29,7 +29,7 @@ include("includes/databaselink.php");
         if ($result->num_rows > 0) {
             // output data of each row
             while($row = $result->fetch_assoc()) {
-               <div class="arrow"> echo "<br> .">"". $row["medicinename"]. "<br>"; </div> 
+                echo "<br> > ". $row["medicinename"]. "<br>";
                 
             }
         } else {
