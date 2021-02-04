@@ -130,6 +130,8 @@ background-color: #ccc;
   text-align: top;
 }
 
+p.solid {border-style: solid;}
+
 .arrow {
   color: green;
 }
