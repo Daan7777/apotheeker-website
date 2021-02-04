@@ -7,6 +7,15 @@
     <link rel="stylesheet" href="css/commonstyle.css">
 </head>
 <body> 
+<img class="logo" src="pictures/banner.jpg">
+    <div class="menu">    <h2>menu</h2> </div> <br>
+        <div class="nav">
+        <a href="index.php">Home</a>
+        <a href="voorlichting.php">Voorlichting</a>
+        <a href="inlogscherm.php">Inloggen</a>
+        <a href="service.php">Service</a>
+    </div>
+    <br>
 <div class="container">
   <form action="connect.php" method="post">
 
@@ -27,6 +36,7 @@
     <input type="submit" value="Submit">
 
   </form>
+</body>
 </div> 
     <div class="mid">
         </h2>
