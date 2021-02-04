@@ -29,15 +29,6 @@ a:link {
      max-width: 1024px;
      margin: auto;
   }
-
-  h2 {
-      margin-top: 310px;
-      outline-style: auto;
-      outline-width: 100cm;
-      background-color: transparent;
-      border-width: 100px;
-      color: black;
-  }
   
   .nav {
       background-color: transparent;
@@ -50,14 +41,9 @@ a:link {
 
    .mid {
       width: 800px;
-      margin: 20px;
-      text-align: center;
-      margin: auto;
       font-family: Arial, Helvetica, sans-serif;
-  }
-
-  .mid a {
-      font-size: 25px;
+      font-size: 18px;
+      margin-top: 50px;
   }
 
   .nav a{
@@ -67,35 +53,92 @@ a:link {
   }
 
   .logo{
-    background-image: url(/pictures/apotheek.png);
-    background-repeat: no-repeat;
-    margin-top: 80px;
-    margin-bottom: 100px;
+    border-image-repeat: no-repeat;
+    margin-top: 10px;
     margin-right: 150px;
-    margin-left: 60px;
+    width: 500px;
+    height: 150px;
   }
   
 .fling-minislide {width:750px; height:200px; overflow:hidden; position:relative; }
 .fling-minislide img{ position:absolute; animation:fling-minislide 20s infinite; opacity:0; width: 750px; height: 200px;}
 
-@keyframes fling-minislide {25%{opacity:1;} 40%{opacity:0;}}
+@keyframes fling-minislide {25%{opacity:1;} 80%{opacity:0;}}
 .fling-minislide img:nth-child(4){animation-delay:0s;}
 .fling-minislide img:nth-child(3){animation-delay:5s;}
 .fling-minislide img:nth-child(2){animation-delay:10s;}
 .fling-minislide img:nth-child(1){animation-delay:15s;}
 
   .fling-minislide{
-    margin-top: 10px;
+    margin-top: 70px;
   }
 
   .nav2 {
     background-color: transparent;
-    text-align: center;
     vertical-align: middle;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
-    word-spacing: 300px;
-    border: 1px black;
-    border-width: 10px;
-}    
+    font-size: 10px;
+    word-spacing: 20px;
+    margin-top: 50px;
+}   
 
+.route {
+  border: 1px black;
+  margin-left: 775px;
+  margin-top: -200px;
+}
+
+.menu {
+  width: 1015px;
+  font-family: Arial, Helvetica, sans-serif;
+  outline-style: auto;
+  outline-width: 100cm;
+  background-color: transparent;
+  border-width: 100px;
+  color: black;
+}
+
+.button1 {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: lightgrey;
+  width: 322px;
+  height: 150px;
+  border-radius: 5px;
+  font-size: 30px;
+}
+
+.button2 {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: lightgrey;
+  width: 322px;
+  height: 150px;
+  border-radius: 5px;
+  font-size: 30px;
+}
+
+.button3 {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: lightgrey;
+  width: 322px;
+  height: 150px;
+  border-radius: 5px;
+  font-size: 30px;
+}
+
+.openingstijden {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  border-style: solid;
+  border-radius: 5px;
+  width: 250px;
+  margin-top: 10px;
+}
+
+.adres {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  border-style: solid;
+  border-radius: 5px;
+  width: 250px;
+  margin-top: 10px;
+}
