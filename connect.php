@@ -14,7 +14,7 @@
        else
        {}
     // Hier komt de code om de data uit de formulier naar de database te sturen
-    $sql = "INSERT INTO `user` (`id`, `firstname`, `lastname`, `country`, `subject`) VALUES (NULL, '$Firstname', '$Lastname', '$Country', '$Subject') ";
+    $sql = "INSERT INTO `user` (`id`, `firstname`, `lastname`, `mail`, `country`, `subject`) VALUES (NULL, '$Firstname', '$Lastname', '$mail', '$Country', '$Subject') ";
     $result = $conn->query($sql);{
 
         header('location:inschrijven.php?Hetisgelukt');

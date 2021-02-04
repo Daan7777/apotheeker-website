@@ -19,19 +19,22 @@
 <div class="container">
   <form action="connect.php" method="post">
 
-    <label for="fname">First Name</label>
-    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+    <label for="fname">Naam</label>
+    <input type="text" id="fname" name="firstname" placeholder="Uw naam..">
 
-    <label for="lname">Last Name</label>
-    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+    <label for="lname">Achternaam</label>
+    <input type="text" id="lname" name="lastname" placeholder="Uw achternaam..">
+
+    <label for="mail">Mail Adress</label>
+    <input type="text" id="mail" name="mail" placeholder="Uw mail adres..">
 
     <label for="country">Land</label>
     <select id="country" name="country">
       <option value="nederland">Nederland</option>
     </select>
 
-    <label for="subject">Subject</label>
-    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+    <label for="subject">Onderwerp</label>
+    <textarea id="subject" name="subject" placeholder="Uw vraag?.." style="height:200px"></textarea>
 
     <input type="submit" value="Submit">
 
