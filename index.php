@@ -32,9 +32,10 @@
       </p>
     </div>
       <div class="nav2">
-        <a href="haalservice.php"> service </a>
-        <a href="medicijneoverzicht.php">medicijneoverzicht</a>
+        <a href="haalservice.php"> haalservice </a>
+        <a href="medicijnoverzicht.php">medicijnoverzicht</a>
         <a href="inschrijven.php">inschrijven</a>
+        </div>
         <div class="openingstijden">
           <p>Openingstijden</p>
         </div>  
