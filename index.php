@@ -9,13 +9,13 @@
 <body>
     <img class="logo" src="pictures/banner.jpg">
     <div class="menu">
-        <h2>menu</h2>
-    </div>
+        <h2>menu</h2> 
+    </div> <br>
     <div class="nav">
         <a href="index.php">Home</a>
         <a href="voorlichting.php">Voorlichting</a>
         <a href="inlogscherm.php">Inloggen</a>
-        <a href="service.php">Service</a>
+        <a href="service.php">Service</a> 
     </div>
     <div class="fling-minislide">
         <img src="pictures/slideshowfoto1.jpg" alt="Slide 4" />
@@ -32,16 +32,16 @@
       </p>
     </div>
       <div class="nav2">
-        <a href="haalservice.php"> haalservice </a>
-        <a href="medicijnoverzicht.php">medicijnoverzicht</a>
-        <a href="inschrijven.php">inschrijven</a>
+        <a href="haalservice.php"> Haalservice </a>
+        <a href="medicijnoverzicht.php">Medicijnoverzicht</a>
+        <a href="inschrijven.php">Inschrijven</a>
         </div>
         <div class="openingstijden">
-          <p>Openingstijden</p>
+          <p>Openingstijden:  Maandag tot vrijdag van: 8:00-18:00</p>
         </div>
           <div class="adres">
-          <p>Adres</p>
-        </div>  
+          <p>Adres:  Hofstraat 13 </p> 
+        </div><br>
 </body>
 </html>
 
