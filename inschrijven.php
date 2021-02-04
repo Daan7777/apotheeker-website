@@ -36,7 +36,7 @@
     <label for="subject">Onderwerp</label>
     <textarea id="subject" name="subject" placeholder="Uw vraag?.." style="height:200px"></textarea>
 
-    <input type="submit" value="Submit">
+    <input type="submit" value="Volgende">
 
   </form>
 </body>
