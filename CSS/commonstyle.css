@@ -1,67 +1,67 @@
-  .nav a:link {
-    color: black;
-    background-color: lightgrey;
-    text-decoration: none;
-    font-size: 20px;
-  }
-  
-  .nav a:visited {
-    color: black;
+.nav a:link {
+  color: black;
+  background-color: lightgrey;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.nav a:visited {
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.nav a:hover {
+    color: rgb(0, 0, 0);
     background-color: transparent;
-    text-decoration: none;
-  }
-  
-  .nav a:hover {
-      color: rgb(0, 0, 0);
-      background-color: transparent;
-      text-decoration: underline;
-      text-overflow: clip;
-  }
-  
-  .nav a:active {
-      color: rgb(255, 0, 0);
-      background-color: transparent;
-      text-decoration: underline;
-  }
+    text-decoration: underline;
+    text-overflow: clip;
+}
 
-  body {
-     background-color: white;
-     max-width: 1024px;
-     margin: auto;
-  }
-  
-  .nav {
-      background-color: transparent;
-      text-align: center;
-      vertical-align: middle;
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: 20px;
-      word-spacing: 75px;
-      margin-top: -13px;
-  }    
+.nav a:active {
+    color: rgb(255, 0, 0);
+    background-color: transparent;
+    text-decoration: underline;
+}
 
-   .mid {
-      width: 800px;
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: 18px;
-      margin-top: 50px;
-  }
+body {
+   background-color: white;
+   max-width: 1024px;
+   margin: auto;
+}
 
-  .nav a{
-      border: 2px solid rgb(0, 0, 0);
-      border-radius: 5px;
-      padding: 5px;
-      margin-top: 100px;
-  }
+.nav {
+    background-color: transparent;
+    text-align: center;
+    vertical-align: middle;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    word-spacing: 75px;
+    margin-top: -13px;
+}    
 
-  .logo{
-    border-image-repeat: no-repeat;
-    margin-top: 10px;
-    margin-right: 150px;
-    width: 500px;
-    height: 150px;
-  }
-  
+ .mid {
+    width: 800px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    margin-top: 50px;
+}
+
+.nav a{
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    padding: 5px;
+    margin-top: 100px;
+}
+
+.logo{
+  border-image-repeat: no-repeat;
+  margin-top: 10px;
+  margin-right: 150px;
+  width: 500px;
+  height: 150px;
+}
+
 .fling-minislide {width:750px; height:200px; overflow:hidden; position:relative; }
 .fling-minislide img{ position:absolute; animation:fling-minislide 20s infinite; opacity:0; width: 750px; height: 200px;}
 
@@ -71,24 +71,24 @@
 .fling-minislide img:nth-child(2){animation-delay:10s;}
 .fling-minislide img:nth-child(1){animation-delay:15s;}
 
-  .fling-minislide{
-    margin-top: 70px;
-  }
+.fling-minislide{
+  margin-top: 70px;
+}
 
 .route {
-  border: 1px black;
-  margin-left: 775px;
-  margin-top: -200px;
+border: 1px black;
+margin-left: 775px;
+margin-top: -200px;
 }
 
 .menu {
-  width: 1015px;
-  font-family: Arial, Helvetica, sans-serif;
-  outline-style: auto;
-  outline-width: 100cm;
-  background-color: transparent;
-  border-width: 100px;
-  color: black;
+width: 1015px;
+font-family: Arial, Helvetica, sans-serif;
+outline-style: auto;
+outline-width: 100cm;
+background-color: transparent;
+border-width: 100px;
+color: black;
 }
 
 .nav2 a:link{
@@ -102,132 +102,132 @@ background-color: #ccc;
 }
 
 .news { 
-  font-size: xx-large;
+font-size: xx-large;
 }
 
 .nav2 {
-  vertical-align: middle;
+vertical-align: middle;
 }
 
 .openingstijden {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 18px;
-  border-style: solid;
-  border-radius: 5px;
-  width: 300px;
-  margin-top: 100px;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 18px;
+border-style: solid;
+border-radius: 5px;
+width: 300px;
+margin-top: 100px;
 }
 
 .adres {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 18px;
-  border-style: solid;
-  border-radius: 5px;
-  width: 550px;
-  margin-top: -75px;
-  margin-right: 100px;
-  margin-left: 323px;
-  text-align: top;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 18px;
+border-style: solid;
+border-radius: 5px;
+width: 550px;
+margin-top: -75px;
+margin-right: 100px;
+margin-left: 323px;
+text-align: top;
 }
 
 p.solid {border-style: solid;}
 
 .arrow {
-  color: green;
+color: green;
 }
 
- /* Style inputs with type="text", select elements and textareas */
- input[type=text], select, textarea {
-  width: 100%; /* Full width */
-  padding: 12px; /* Some padding */ 
-  border: 1px solid #ccc; /* Gray border */
-  border-radius: 4px; /* Rounded borders */
-  box-sizing: border-box; /* Make sure that padding and width stays in place */
-  margin-top: 6px; /* Add a top margin */
-  margin-bottom: 16px; /* Bottom margin */
-  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+width: 100%; /* Full width */
+padding: 12px; /* Some padding */ 
+border: 1px solid #ccc; /* Gray border */
+border-radius: 4px; /* Rounded borders */
+box-sizing: border-box; /* Make sure that padding and width stays in place */
+margin-top: 6px; /* Add a top margin */
+margin-bottom: 16px; /* Bottom margin */
+resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
 }
 
 /* Style the submit button with a specific background color etc */
 input[type=submit] {
-  background-color: #4d8ede;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
+background-color: #4d8ede;
+color: white;
+padding: 12px 20px;
+border: none;
+border-radius: 4px;
+cursor: pointer;
 }
 
 /* When moving the mouse over the submit button, add a darker green color */
 input[type=sumbit]:hover {
-  background-color: #0a3e7d;
+background-color: #0a3e7d;
 }
 
 /* Add a background color and some padding around the form */
 .container {
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 20px;
+border-radius: 5px;
+background-color: #f2f2f2;
+padding: 20px;
 } 
 
 body {font-family: Arial, Helvetica, sans-serif;}
 form {border: 3px solid #f1f1f1;}
 
 input[type=text], input[type=password] {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  box-sizing: border-box;
+width: 100%;
+padding: 12px 20px;
+margin: 8px 0;
+display: inline-block;
+border: 1px solid #ccc;
+box-sizing: border-box;
 }
 
 button {
-  background-color: #4d8ede;
-  color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
-  border: none;
-  cursor: pointer;
-  width: 100%;
+background-color: #4d8ede;
+color: white;
+padding: 14px 20px;
+margin: 8px 0;
+border: none;
+cursor: pointer;
+width: 100%;
 }
 
 button:hover {
-  opacity: 0.8;
+opacity: 0.8;
 }
 
 .cancelbtn {
-  width: auto;
-  padding: 10px 18px;
-  background-color: #f44336;
+width: auto;
+padding: 10px 18px;
+background-color: #f44336;
 }
 
 .imgcontainer {
-  text-align: center;
-  margin: 24px 0 12px 0;
+text-align: center;
+margin: 24px 0 12px 0;
 }
 
 img.avatar {
-  width: 40%;
-  border-radius: 50%;
+width: 40%;
+border-radius: 50%;
 }
 
 .container {
-  padding: 16px;
+padding: 16px;
 }
 
 span.psw {
-  float: right;
-  padding-top: 16px;
+float: right;
+padding-top: 16px;
 }
 
 /* Change styles for span and cancel button on extra small screens */
 @media screen and (max-width: 300px) {
-  span.psw {
-     display: block;
-     float: none;
-  }
-  .cancelbtn {
-     width: 100%;
-  }
+span.psw {
+   display: block;
+   float: none;
+}
+.cancelbtn {
+   width: 100%;
+}
 }
