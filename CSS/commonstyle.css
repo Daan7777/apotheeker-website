@@ -12,46 +12,47 @@
   }
   
   .nav a:hover {
-      color: rgb(0, 0, 0);
-      background-color: transparent;
-      text-decoration: underline;
-      text-overflow: clip;
+    color: rgb(0, 0, 0);
+    background-color: transparent;
+    text-decoration: underline;
+    text-overflow: clip;
   }
   
   .nav a:active {
-      color: rgb(255, 0, 0);
-      background-color: transparent;
-      text-decoration: underline;
+    color: rgb(255, 0, 0);
+    background-color: transparent;
+    text-decoration: underline;
   }
 
   body {
-     background-color: white;
-     max-width: 1024px;
-     margin: auto;
+    background-color: white;
+    max-width: 1024px;
+    margin: auto;
   }
   
   .nav {
-      background-color: transparent;
-      text-align: center;
-      vertical-align: middle;
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: 20px;
-      word-spacing: 75px;
-      margin-top: -13px;
+    background-color: transparent;
+    text-align: center;
+    vertical-align: middle;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    word-spacing: 75px;
+    margin-top: -13px;
   }    
 
-   .mid {
-      width: 800px;
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: 18px;
-      margin-top: 50px;
+  .mid {
+    width: 800px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    margin-top: 50px;
+    color: black;
   }
 
   .nav a{
-      border: 2px solid rgb(0, 0, 0);
-      border-radius: 5px;
-      padding: 5px;
-      margin-top: 100px;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    padding: 5px;
+    margin-top: 100px;
   }
 
   .logo{
@@ -75,64 +76,72 @@
     margin-top: 70px;
   }
 
-.route {
-  border: 1px black;
-  margin-left: 775px;
-  margin-top: -200px;
-}
+  .route {
+    border: 1px black;
+    margin-left: 775px;
+    margin-top: -200px;
+  }
 
-.menu {
-  width: 1015px;
-  font-family: Arial, Helvetica, sans-serif;
-  outline-style: auto;
-  outline-width: 100cm;
-  background-color: transparent;
-  border-width: 100px;
-  color: black;
-}
+  .menu {
+    width: 1015px;
+    font-family: Arial, Helvetica, sans-serif;
+    outline-style: auto;
+    outline-width: 100cm;
+    background-color: transparent;
+    border-width: 100px;
+    color: black;
+  }
 
-.nav2 a:link{
-font-family: Arial, Helvetica, sans-serif;
-font-size: 30px;
-border: 1px black;
-border-radius: 5px;
-padding: 79px;
-border-style: solid;
-background-color: #ccc;
-}
+  .nav2 a:link{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    border: 1px black;
+    border-radius: 5px;
+    padding: 79px;
+    border-style: solid;
+    background-color: #ccc;
+  }
 
-.news { 
-  font-size: xx-large;
-}
+  .news { 
+    font-s.ize: 16px;
+  }
 
-.nav2 {
-  vertical-align: middle;
-}
+  .newslist {
+    margin-top: 20px;
+    padding: 5px;
+    border-style: solid;
+    font-size: 16px;
+  }
 
-.openingstijden {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 18px;
-  border-style: solid;
-  border-radius: 5px;
-  width: 250px;
-  margin-top: 100px;
-}
+  .nav2 {
+    vertical-align: middle;
+    margin-top: 125px;
+  }
 
-.adres {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 18px;
-  border-style: solid;
-  border-radius: 5px;
-  width: 550px;
-  margin-top: -65px;
-  margin-right: 100px;
-  margin-left: 323px;
-  text-align: top;
-}
+  .openingstijden {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    border-style: solid;
+    border-radius: 5px;
+    width: 250px;
+    margin-top: 100px;
+  }
 
-.arrow {
-  color: green;
-}
+  .adres {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    border-style: solid;
+    border-radius: 5px;
+    width: 450px;
+    margin-top: -65px;
+    margin-right: 100px;
+    margin-left: 323px;
+    text-align: top;
+  }
+
+  .arrow {
+    color: green;
+  }
 
  /* Style inputs with type="text", select elements and textareas */
  input[type=text], select, textarea {
@@ -162,8 +171,8 @@ input[type=submit]:hover {
 }
 
 /* Add a background color and some padding around the form */
-.container {
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 20px;
-} 
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  } 
