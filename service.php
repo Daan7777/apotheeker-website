@@ -19,7 +19,3 @@
     <div class="mid">
         </h2>
     </div>
-    <div> 
-    <p class="solid">Diensten, <br> <br> Voorlichting, <br> Herhaalservice <br> Uw medicijnen staan klaar. <br>
-    </p>
-</div>
