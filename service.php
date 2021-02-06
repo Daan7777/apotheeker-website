@@ -8,7 +8,7 @@
 </head>
 <body> 
 <img class="logo" src="pictures/banner.jpg">
-    <div class="menu">    <h2>menu</h2> </div> <br>
+    <div class="menu">    <h2>menu</h2> </div> 
         <div class="nav">
         <a href="index.php">Home</a>
         <a href="voorlichting.php">Voorlichting</a>
