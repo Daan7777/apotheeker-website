@@ -22,17 +22,17 @@
     <div class="mid">
         </h2>
     </div>
-    <form action="/action_page.php" method="post">
+    <form action="" method="post">
   <div class="imgcontainer">
     <img src="pictures/img_avatar2.png" alt="Avatar" class="avatar">
   </div>
 
   <div class="container">
     <label for="uname"><b>Username</b></label>
-    <input type="text" placeholder="Enter Username" name="uname" required>
+    <input type="text" placeholder="Enter Username" name="username" required>
 
-    <label for="psw"><b>Password</b></label>
-    <input type="password" placeholder="Enter Password" name="psw" required>
+    <label for="password"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="password" required>
         
     <button type="submit">Login</button>
     <label>
@@ -42,14 +42,12 @@
 
   <div class="container" style="background-color:#f1f1f1">
     <button type="button" class="cancelbtn">Cancel</button>
-    <span class="psw">Forgot <a href="#">password?</a></span>
+    <span class="password">Forgot <a href="#">password?</a></span>
   </div>
 </form>
 <?php
     include("includes/databaselink.php");
     
-    mysql_connect($host,$user,$password);
-mysql_select_db($db);
 
 if(isset($_POST['username'])){
     
