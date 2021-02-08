@@ -19,7 +19,7 @@
     <div class="mid">
         </h2>
     </div>
-
+    <div class="medicijnoverzicht">
     <?php
 
 include("includes/databaselink.php");
@@ -41,4 +41,4 @@ include("includes/databaselink.php");
             }
 
     ?>
-    <div> </div>
+    </div>
