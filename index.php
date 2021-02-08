@@ -31,7 +31,7 @@
       </p>
     </div>
       <div class="nav2">
-      <a href="haalservice.php"> haalservice </a>
+      <a href="haalservice.php"> herhaalservice </a>
       <a href="medicijnoverzicht.php">medicijnoverzicht</a>
       <a href="inschrijven.php">inschrijven</a>
     </div>
