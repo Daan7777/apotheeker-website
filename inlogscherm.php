@@ -22,13 +22,13 @@
     <div class="mid">
         </h2>
     </div>
-    <form action="" method="post">
+    <form action="connect.php" method="post">
   <div class="imgcontainer">
     <img src="pictures/img_avatar2.png" alt="Avatar" class="avatar">
   </div>
 
   <div class="container">
-    <label for="uname"><b>Username</b></label>
+    <label for="username"><b>Username</b></label>
     <input type="text" placeholder="Enter Username" name="username" required>
 
     <label for="password"><b>Password</b></label>
@@ -51,10 +51,10 @@
 
 if(isset($_POST['username'])){
     
-    $uname=$_POST['username'];
+    $username=$_POST['username'];
     $password=$_POST['password'];
     
-    $sql="select * from loginform where user='".$uname."'AND Pass='".$password."' limit 1";
+    $sql="select * from loginform where user='".$username."'AND Pass='".$password."' limit 1";
     
     $result=mysql_query($sql);
     
