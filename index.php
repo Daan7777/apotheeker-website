@@ -50,7 +50,7 @@
     if ($result->num_rows > 0) {
       // output data of each row
       while($row = $result->fetch_assoc()) {
-        echo " <div class='news'>" . $row["Title"].  $row["Information"]. "</div><br>";
+        echo " <div class='news'><a href='". $row["Link"]."'>" . $row["Title"].  $row["Information"]. "</a></div><br>";
       }
     } else {
       echo "0 results";
