@@ -1,126 +1,59 @@
-<?php  
- include("includes/databaselink.php");
- session_start();  
- if(isset($_SESSION["username"]))  
- {  
-      header("location:entry.php");  
- }  
- if(isset($_POST["register"]))  
- {  
-      if(empty($_POST["username"]) && empty($_POST["password"]))  
-      {  
-           echo '<script>alert("Both Fields are required")</script>';  
-      }  
-      else  
-      {  
-           $username = mysqli_real_escape_string($conn, $_POST["username"]);  
-           $password = mysqli_real_escape_string($conn, $_POST["password"]);  
-           $password = md5($password);  
-           $query = "INSERT INTO users (username, password) VALUES('$username', '$password')";  
-           if(mysqli_query($conn, $query))  
-           {  
-                echo '<script>alert("Registration Done")</script>';  
-           }  
-      }  
- }  
- if(isset($_POST["login"]))  
- {  
-      if(empty($_POST["username"]) && empty($_POST["password"]))  
-      {  
-           echo '<script>alert("Both Fields are required")</script>';  
-      }  
-      else  
-      {  
-           $username = mysqli_real_escape_string($conn, $_POST["username"]);  
-           $password = mysqli_real_escape_string($conn, $_POST["password"]);  
-           $password = md5($password);  
-           $query = "SELECT * FROM users WHERE username = '$username' AND password = '$password'";  
-           $result = mysqli_query($conn, $query);  
-           if(mysqli_num_rows($result) > 0)  
-           {  
-                $_SESSION['username'] = $username;  
-                header("location:entry.php");  
-           }  
-           else  
-           {  
-                echo '<script>alert("Wrong User Details")</script>';  
-           }  
-      }  
- }  
- ?>  
- <!DOCTYPE html>  
- <html>  
-      <head> 
-              <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/commonstyle.css">
-</head>
+<?php
+include("includes/databaselink.php");
+
+//als formulier verzonden
+if (!empty($_POST['username']) && !empty($_POST['password'])) {
+    //controleer wachtwoord
+    if ($gebruikers[$_POST['username']] == $_POST['password']) {
+        $cookie['username'] = $_POST['username'];
+        $cookie['password'] = $_POST['password'];
+        //zet cookie
+        setcookie('login', serialize($cookie), time() + 60*60*24*7*2, '/');
+        //login is gelukt
+        $login_correct = TRUE;
+    }
+    //wachtwoord niet correct
+    else {
+        $login_error = TRUE;
+    }
+}
+?> 
+
+
+
+<!DOCTYPE HTML>
+<html>
 <head>
-<body> 
-<img class="logo" src="pictures/banner.jpg">
-      <div class="menu">
-        <h2>menu</h2>
-      </div>
-      <div class="nav">
-        <a href="index.php">Home</a>
-        <a href="voorlichting.php">Voorlichting</a>
-        <a href="inlogscherm.php">Inloggen</a>
-        <a href="service.php">Service</a>
-      </div>
-      </div>
-          </body>
-    <div class="mid">
-        </h2>
-    </div> 
-    hea
-           <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>  
-           <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />  
-           <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>  
-      </head>  
-      <body>  
-           <br /><br />  
-           <div class="container" style="width:500px;">  
-                <h3 align="center">PHP Login Registration Form with md5() Password Encryption</h3>  
-                <br />  
-                <?php  
-                if(isset($_GET["action"]) == "login")  
-                {  
-                ?>  
-                <h3 align="center">Login</h3>  
-                <br />  
-                <form method="post">  
-                     <label>Enter Username</label>  
-                     <input type="text" name="username" class="form-control" />  
-                     <br />  
-                     <label>Enter Password</label>  
-                     <input type="password" name="password" class="form-control" />  
-                     <br />  
-                     <input type="submit" name="login" value="Login" class="btn btn-info" />  
-                     <br />  
-                     <p align="center"><a href="index.php">Register</a></p>  
-                </form>  
-                <?php       
-                }  
-                else  
-                {  
-                ?>  
-                <h3 align="center">Register</h3>  
-                <br />  
-                <form method="post">  
-                     <label>Enter Username</label>  
-                     <input type="text" name="username" class="form-control" />  
-                     <br />  
-                     <label>Enter Password</label>  
-                     <input type="password" name="password" class="form-control" />  
-                     <br />  
-                     <input type="submit" name="register" value="Register" class="btn btn-info" />  
-                     <br />  
-                     <p align="center"><a href="index.php?action=login">Login</a></p>  
-                </form>  
-                <?php  
-                }  
-                ?>  
-           </div>  
-      </body>  
- </html>  
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>Login</title>
+</head>
+<body>
+
+<?php if ($login_correct === TRUE) { ?>
+    
+    <h1>Login gelukt!</h1>
+    <p>Welkom in het beveiligde gedeelte van deze website!</p>
+    
+<?php } else { ?>
+    
+    <h1>Login</h1>
+    <p>Vul gebruikersnaam en wachtwoord in om toegang te krijgen tot het beveiligde gedeelte van deze website</p>
+    
+    <?php
+    if ($login_error === TRUE) {
+        echo '<p class="error">De gebruikersnaam/wachtwoord combinatie bestaat niet.</p>';
+    }
+    ?>
+    
+    <form method="post">
+    <table>
+    <tr><td>Gebruikersnaam:</td><td><input type="text" name="username"></td></tr>
+    <tr><td>Wachtwoord:</td><td><input type="password" name="password"></td></tr>
+    <tr><td></td><td><input type="submit" value="Login"></td></tr>
+    </table>
+    </form>
+    
+<?php } ?>
+
+</body>
+</html> 

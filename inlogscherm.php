@@ -28,17 +28,16 @@
   ?>  
   <h3 align="center">Login</h3>  
   <br />   
-      <form method="post">  
-<label for="psw"><b>Password</b></label>
-    <input type="password" placeholder="Enter Password" name="psw" required>
+  <form method="post" >  
+<label for="username"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="username" required>
    <br />  
    <label>Enter Password</label>  
    <input type="password" name="password" class="form-control" />  
    <br />  
    <input type="submit" name="login" value="Login" class="btn btn-info" />  
    <br />  
-   <p align="center"><a href="index.php">Register</a></p>  
-  </form>  
+  </form>
   <?php       
   }  
   else  
@@ -55,7 +54,7 @@
    <br />  
    <input type="submit" name="register" value="Register" class="btn btn-info" />  
    <br />  
-   <p align="center"><a href="index.php?action=login">Login</a></p>  
+   <p align="center"><a href="inlogscherm.php?action=login">Login</a></p>  
   </form>  
   <?php  
   }  
@@ -93,20 +92,23 @@
          }  
          else  
          {  
-              $username = mysqli_real_escape_string($conn, $_POST["username"]);  
-              $password = mysqli_real_escape_string($conn, $_POST["password"]);  
-              $password = md5($password);  
-              $query = "SELECT * FROM users WHERE username = '$username' AND password = '$password'";  
-              $result = mysqli_query($conn, $query);  
-              if(mysqli_num_rows($result) > 0)  
-              {  
-                   $_SESSION['username'] = $username;  
-                   header("location:entry.php");  
+          $username = mysqli_real_escape_string($conn, $_POST["username"]);  
+          $password = mysqli_real_escape_string($conn, $_POST["password"]);  
+          $password = md5($password);  
+          $query = "SELECT * FROM users WHERE username = '$username' AND password = '$password'";  
+         
+          echo $query; 
+          $result = mysqli_query($conn, $query);  
+          if(mysqli_num_rows($result) > 0)  
+          {  
+                 $_SESSION['username'] = $username;  
+                  header("location:index.php");  
+                 //echo '<script>alert("nice User Details")</script>';  
               }  
-              else  
-              {  
-                   echo '<script>alert("Wrong User Details")</script>';  
-              }  
+            else  
+            {  
+                 echo '<script>alert("Wrong User Details")</script>';  
+            }    
          }  
     } 
   ?>
