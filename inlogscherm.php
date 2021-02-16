@@ -18,54 +18,95 @@
         <a href="service.php">Service</a>
       </div>
       </div>
-        </body>
+          </body>
     <div class="mid">
         </h2>
     </div>
-    <form action="" method="post">
-  <div class="imgcontainer">
-    <img src="pictures/img_avatar2.png" alt="Avatar" class="avatar">
-  </div>
-
-  <div class="container">
-    <label for="uname"><b>Username</b></label>
-    <input type="text" placeholder="Enter Username" name="username" required>
-
-    <label for="password"><b>Password</b></label>
-    <input type="password" placeholder="Enter Password" name="password" required>
-        
-    <button type="submit">Login</button>
-    <label>
-      <input type="checkbox" checked="checked" name="remember"> Remember me
-    </label>
-  </div>
-
-  <div class="container" style="background-color:#f1f1f1">
-    <button type="button" class="cancelbtn">Cancel</button>
-    <span class="password">Forgot <a href="#">password?</a></span>
-  </div>
-</form>
+    <?php  
+  if(isset($_GET["action"]) == "login")  
+  {  
+  ?>  
+  <h3 align="center">Login</h3>  
+  <br />   
+      <form method="post">  
+<label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+   <br />  
+   <label>Enter Password</label>  
+   <input type="password" name="password" class="form-control" />  
+   <br />  
+   <input type="submit" name="login" value="Login" class="btn btn-info" />  
+   <br />  
+   <p align="center"><a href="index.php">Register</a></p>  
+  </form>  
+  <?php       
+  }  
+  else  
+  {  
+  ?>  
+  <h3 align="center">Register</h3>  
+  <br />  
+  <form method="post">  
+   <label>Enter Username</label>  
+   <input type="text" name="username" class="form-control" />  
+   <br />  
+   <label>Enter Password</label>  
+   <input type="password" name="password" class="form-control" />  
+   <br />  
+   <input type="submit" name="register" value="Register" class="btn btn-info" />  
+   <br />  
+   <p align="center"><a href="index.php?action=login">Login</a></p>  
+  </form>  
+  <?php  
+  }  
+  ?>  
 <?php
     include("includes/databaselink.php");
-    
-
-if(isset($_POST['username'])){
-    
-    $uname=$_POST['username'];
-    $password=$_POST['password'];
-    
-    $sql="select * from loginform where user='".$uname."'AND Pass='".$password."' limit 1";
-    
-    $result=mysql_query($sql);
-    
-    if(mysql_num_rows($result)==1){
-        echo " You Have Successfully Logged in";
-        exit();
-    }
-    else{
-        echo " You Have Entered Incorrect Password";
-        exit();
-    }
-        
-}
+    session_start();
+    if(isset($_SESSION["username"]))  
+    {  
+         header("location:entry.php");  
+    }  
+    if(isset($_POST["register"]))  
+    {  
+         if(empty($_POST["username"]) && empty($_POST["password"]))  
+         {  
+              echo '<script>alert("Both Fields are required")</script>';  
+         }  
+         else  
+         {  
+              $username = mysqli_real_escape_string($conn, $_POST["username"]);  
+              $password = mysqli_real_escape_string($conn, $_POST["password"]);  
+              $password = md5($password);  
+              $query = "INSERT INTO users (username, password) VALUES('$username', '$password')";  
+              if(mysqli_query($conn, $query))  
+              {  
+                   echo '<script>alert("Registration Done")</script>';  
+              }  
+         }  
+    }  
+    if(isset($_POST["login"]))  
+    {  
+         if(empty($_POST["username"]) && empty($_POST["password"]))  
+         {  
+              echo '<script>alert("Both Fields are required")</script>';  
+         }  
+         else  
+         {  
+              $username = mysqli_real_escape_string($conn, $_POST["username"]);  
+              $password = mysqli_real_escape_string($conn, $_POST["password"]);  
+              $password = md5($password);  
+              $query = "SELECT * FROM users WHERE username = '$username' AND password = '$password'";  
+              $result = mysqli_query($conn, $query);  
+              if(mysqli_num_rows($result) > 0)  
+              {  
+                   $_SESSION['username'] = $username;  
+                   header("location:entry.php");  
+              }  
+              else  
+              {  
+                   echo '<script>alert("Wrong User Details")</script>';  
+              }  
+         }  
+    } 
   ?>
