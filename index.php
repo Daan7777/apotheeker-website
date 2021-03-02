@@ -36,21 +36,23 @@
       <a href="inschrijven.php">inschrijven</a>
     </div>
     <div class="openingstijden">
-      <p>Openingstijden</p>
+      <p> Openingstijden: <br>	Elke dag: 08:00–18:00 
+</p> 
     </div>
     <div class="adres">
-      <p>Adres</p>
+      <p> Adres: <br> Zuiderweg, Nieuwstraat 23/69</p>
     </div>  
     <div class="newslist">
+      Nieuws: <br><br>
       <?php
     include("includes/databaselink.php");
-    $sql = "SELECT * from news";
+    $sql = "SELECT * FROM `news` ORDER BY `news`.`Insert_date` DESC";
     $result = $conn->query($sql);
 
     if ($result->num_rows > 0) {
       // output data of each row
       while($row = $result->fetch_assoc()) {
-        echo " <div class='news'><a href='". $row["Link"]."'>" . $row["Title"].  $row["Information"]. "</a></div><br>";
+        echo " <div class='news'><a href='". $row["Link"]."'target='_blank'  >" . $row["Title"].  $row["Information"]. "</a></div><br>";
       }
     } else {
       echo "0 results";

@@ -19,7 +19,7 @@
 }
 
 .nav a:active {
-  color: rgb(255, 0, 0);
+  color: rgb(255, 255, 255);
   background-color: transparent;
   text-decoration: underline;
 }
@@ -30,6 +30,7 @@ body {
   margin: auto;
 }
 
+
 .nav {
   background-color: transparent;
   text-align: center;
@@ -38,6 +39,7 @@ body {
   font-size: 20px;
   word-spacing: 75px;
   margin-top: -13px;
+  
 }    
 
  .mid {
@@ -45,6 +47,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 18px;
   margin-top: 50px;
+  padding-left: 10px;
 }
 
 .nav a{
@@ -119,6 +122,7 @@ body {
   border-radius: 5px;
   width: 300px;
   margin-top: 100px;
+  padding-left: 10px;
 }
 
 .adres {
@@ -127,10 +131,11 @@ body {
   border-style: solid;
   border-radius: 5px;
   width: 550px;
-  margin-top: -61px;
+  margin-top: -83px;
   margin-right: 100px;
   margin-left: 345px;
   text-align: top;
+  padding-left: 10px;
 }
 
 p.solid {border-style: solid;}
@@ -239,8 +244,22 @@ span.psw {
   border-style: solid;
   font-size: 16px;
   margin-top: 30px;
+  padding-left: 10px;
 }
 
-.medicijnoverzicht {
+.border2 {
   border-style: solid;
+  padding-left: 10px;
+  
 }
+
+.border1 {
+  border-style: solid;
+  padding-left: 10px;
+}
+
+.border3 {
+  border-style: solid;
+  padding-left: 10px;
+}
+

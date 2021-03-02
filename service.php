@@ -15,7 +15,30 @@
         <a href="inlogscherm.php">Inloggen</a>
         <a href="service.php">Service</a>
     </div> <br>
-        </body>
     <div class="mid">
         </h2>
     </div>
+    <div class="border3">
+        <?php
+
+include("includes/databaselink.php");
+        $sql = "SELECT * FROM `service`  ";
+        $result = $conn->query($sql);
+        
+        if ($result->num_rows > 0) {
+            // output data of each row
+            while($row = $result->fetch_assoc()) {
+                echo "". $row["information"]. "<br>";
+                
+            }
+        } else {
+            echo "BIG FAT error";
+        }
+
+        {
+            $conn -> close();
+            }
+
+    ?>
+    </body>
+        </html>

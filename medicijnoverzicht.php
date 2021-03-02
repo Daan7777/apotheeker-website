@@ -15,12 +15,12 @@
         <a href="inlogscherm.php">Inloggen</a>
         <a href="service.php">Service</a>
     </div> <br>
-        </body>
+        
     <div class="mid">
-        </h2>
-    </div>
-    <div class="medicijnoverzicht">
-    <?php
+        </div>
+    <div class="border2">
+    </body>
+        <?php
 
 include("includes/databaselink.php");
         $sql = "SELECT * FROM `medicines` ORDER BY `medicines`.`medicinename` ASC ";
