@@ -24,6 +24,7 @@
   text-decoration: underline;
 }
 
+ 
 body {
   background-color: white;
   max-width: 1024px;
@@ -39,8 +40,12 @@ body {
   font-size: 20px;
   word-spacing: 75px;
   margin-top: -13px;
-  
-}    
+  }    
+
+  .nav .deze {
+    background-color: white  !important;
+    color: white;
+  }
 
  .mid {
   width: 800px;
@@ -176,6 +181,7 @@ background-color: #0a3e7d;
   border-radius: 5px;
   background-color: #f2f2f2;
   padding: 20px;
+  
 } 
 
 body {font-family: Arial, Helvetica, sans-serif;}
@@ -261,5 +267,10 @@ span.psw {
 .border3 {
   border-style: solid;
   padding-left: 10px;
+}
+
+.account {
+  text-align: center;
+  padding-left: 270px;
 }
 

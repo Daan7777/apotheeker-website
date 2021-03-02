@@ -7,16 +7,9 @@
     <link rel="stylesheet" href="css/commonstyle.css">
 </head>
 <body> 
-<img class="logo" src="pictures/banner.jpg">
-      <div class="menu">
-        <h2>menu</h2>
-      </div>
-      <div class="nav">
-        <a href="index.php">Home</a>
-        <a href="voorlichting.php">Voorlichting</a>
-        <a href="inlogscherm.php">Inloggen</a>
-        <a href="service.php">Service</a>
-      </div>
+<?php
+Include ("includes/menu.php");
+    ?>
       </div>
           </body>
     <div class="mid">
@@ -25,39 +18,40 @@
     <?php  
   if(isset($_GET["action"]) == "login")  
   {  
-  ?>  
-  <h3 align="center">Login</h3>  
-  <br />   
-  <form method="post" >  
-<label for="username"><b>Username</b></label>
-    <input type="text" placeholder="Enter Username" name="username" required>
-   <br />  
-   <label>Enter Password</label>  
-   <input type="password" name="password" class="form-control" />  
-   <br />  
-   <input type="submit" name="login" value="Login" class="btn btn-info" />  
-   <br />  
-  </form>
-  <?php       
-  }  
+     ?>  
+     <h3 align="center">Register</h3>  
+     <br />  
+     <form method="post">  
+      <label><b>Enter Username</label>  
+      <input type="text"  placeholder="Enter Username" name="username" class="form-control" />  
+      <br />  
+      <label><b>Enter Password</label>  
+      <input type="text"  placeholder="Enter Password" name="password" class="form-control" />  
+      <br />  
+      <input type="submit" name="register" value="Register" class="btn btn-info" />  
+      <br />  
+      <p align="center"><a href="inlogscherm.php">Login</a></p>  
+     </form>  
+     <?php  
+     }   
   else  
   {  
-  ?>  
-  <h3 align="center">Register</h3>  
-  <br />  
-  <form method="post">  
-   <label>Enter Username</label>  
-   <input type="text" name="username" class="form-control" />  
-   <br />  
-   <label>Enter Password</label>  
-   <input type="password" name="password" class="form-control" />  
-   <br />  
-   <input type="submit" name="register" value="Register" class="btn btn-info" />  
-   <br />  
-   <p align="center"><a href="inlogscherm.php?action=login">Login</a></p>  
-  </form>  
-  <?php  
-  }  
+     ?>  
+     <h3 align="center">Login</h3>  
+     <br />   
+     <form method="post" >  
+   <label for="username"><b>Username</b></label>
+       <input type="text" placeholder="Enter Username" name="username" required>
+      <br />   
+      <label><b>Password</label>  
+      <input type="text" placeholder="Enter Password" name="password" class="form-control" />  
+      <br />  
+      <input type="submit" name="login" value="Login" class="btn btn-info" />  
+      <br />  
+      <p align="center"><a href="inlogscherm.php?action=login">Register</a></p>  
+     </form>
+     <?php       
+     } 
   ?>  
 <?php
     include("includes/databaselink.php");

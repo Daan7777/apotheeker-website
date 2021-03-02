@@ -12,7 +12,7 @@
         <div class="nav">
         <a href="index.php">Home</a>
         <a href="voorlichting.php">Voorlichting</a>
-        <a href="inlogscherm.php">Inloggen</a>
+        <a href="inlogscherm.php">Account</a>
         <a href="service.php">Service</a>
     </div> <br>
         </body>

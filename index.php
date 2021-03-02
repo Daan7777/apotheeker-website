@@ -6,16 +6,9 @@
     <link rel="stylesheet" href="css/commonstyle.css">
   </head>
   <body>
-    <img class="logo" src="pictures/banner.jpg">
-    <div class="menu">
-      <h2>menu</h2>
-    </div>
-    <div class="nav">
-      <a href="index.php">Home</a>
-      <a href="voorlichting.php">Voorlichting</a>
-      <a href="inlogscherm.php">Inloggen</a>
-      <a href="service.php">Service</a>
-    </div>
+  <?php
+Include ("includes/menu.php");
+    ?>
     <div class="fling-minislide">
       <img src="pictures/slideshowfoto1.jpg" alt="Slide 4" />
       <img src="pictures/slideshowfoto2.png" alt="Slide 3" />
