@@ -40,6 +40,8 @@ body {
   font-size: 20px;
   word-spacing: 75px;
   margin-top: -13px;
+  position: sticky;
+  top: 0;
   }    
 
   .nav .deze {
