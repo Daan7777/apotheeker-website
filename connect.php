@@ -5,17 +5,17 @@
        $Firstname = $_POST['firstname'];
        $Lastname = $_POST['lastname'];
        $mail = $_POST['mail'];
-       $Country = $_POST['country'];
+       $aanhef = $_POST['aanhef'];
        $Subject = $_POST['subject'];
 
-       if(empty($Firstname) || empty($Lastname) || empty($mail) || empty($Country) || empty($Subject))
+       if(empty($Firstname) || empty($Lastname) || empty($mail) || empty($aanhef) || empty($Subject))
        {
            header('location:inschrijven.php?error');
        }
        else
        {}
     // Hier komt de code om de data uit de formulier naar de database te sturen
-    $sql = "INSERT INTO `user` (`id`, `firstname`, `lastname`, `mail` , `country`, `subject`) VALUES (NULL, '$Firstname', '$Lastname', '$mail', '$Country', '$Subject') ";
+    $sql = "INSERT INTO `user` (`id`, `firstname`, `lastname`, `mail` , `aanhef`, `subject`) VALUES (NULL, '$Firstname', '$Lastname', '$mail', '$aanhef', '$Subject') ";
     $result = $conn->query($sql);{
 
         header('location:inschrijven.php?Hetisgelukt');

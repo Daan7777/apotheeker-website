@@ -8,7 +8,7 @@
 </head>
 <body> 
 <img class="logo" src="pictures/banner.jpg">
-    <div class="menu">    <h2>menu</h2> </div> <br>
+    <div class="menu">    <h2>menu</h2> </div> 
         <div class="nav">
         <a href="index.php">Home</a>
         <a href="voorlichting.php">Voorlichting</a>
@@ -29,7 +29,7 @@
     <input type="text" id="mail" name="mail" placeholder="Uw e-mail adres.." required>
 
     <label for="aanhef">Aanhef</label>
-    <select id="aanhef" name="Aanhef">
+    <select id="aanhef" name="aanhef">
     <option placeholder="" required> </option>
       <option value="meneer">Meneer</option>
       <option value="mevrouw">Mevrouw</option>
