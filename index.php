@@ -24,9 +24,9 @@ Include ("includes/menu.php");
       </p>
     </div>
       <div class="nav2">
-      <a href="haalservice.php"> herhaalservice </a>
-      <a href="medicijnoverzicht.php">medicijnoverzicht</a>
-      <a href="inschrijven.php">inschrijven</a>
+      <a href="haalservice.php"> Herhaalservice </a>
+      <a href="medicijnoverzicht.php">Medicijnoverzicht</a>
+      <a href="inschrijven.php">Formulier</a>
     </div>
     <div class="openingstijden">
       <p> Openingstijden: <br>	Elke dag: 08:00–18:00 
