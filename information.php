@@ -7,29 +7,31 @@
         <link rel="stylesheet" href="css/commonstyle.css">
     </head>
     <body> 
-    <?php
-        Include ("includes/menu.php");
-        ?> <br>
-        <div class="mid">
+        <?php
+            Include ("includes/menu.php");
+        ?>
+        <br>
+        <div
+            class="mid"> 
         </div>
-        <div class="border3">
+        <div 
+            class="border1">
         <?php
             include("includes/databaselink.php");
-            $sql = "SELECT * FROM `service`  ";
+            $sql = "SELECT * FROM `voorlichting`  ";
             $result = $conn->query($sql);
-                if ($result->num_rows > 0) {
-                // output data of each row
-                while($row = $result->fetch_assoc()) {
-                    echo "". $row["information"]. "<br>"; 
-                }
+            
+            if ($result->num_rows > 0) {
+            // output data of each row
+            while($row = $result->fetch_assoc()) {
+            echo "". $row["information"]. "<br>";
+            }
             } else {
                 echo "BIG FAT error";
             }
-
             {
                 $conn -> close();
-                }
-
+            }
         ?>
         </div>
     </body>
