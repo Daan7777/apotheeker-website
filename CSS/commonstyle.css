@@ -1,38 +1,36 @@
-
+/* Css voor de navigatie balk/menu. */
 .nav a:link {
   color: rgb(0, 0, 0);
   background-color: rgb(211, 211, 211);
   text-decoration: none;
   font-size: 20px;
 }
-
+/* Css voor de navigatie balk/menu. */
 .nav a:visited {
   color: rgb(0, 0, 0);
   background-color: transparent;
   text-decoration: none;
 }
-
+/* Css voor de navigatie balk/menu. */
 .nav a:hover {
   color: rgb(0, 0, 0);
   background-color: rgb(255, 255, 255);
   text-decoration: underline;
   text-overflow: clip;
 }
-
+/* Css voor de navigatie balk/menu. */
 .nav a:active {
   color: rgb(255, 255, 255);
   background-color: transparent;
   text-decoration: underline;
 }
-
- 
+/* Css voor de body. */
 body {
   background-color: rgb(255, 255, 255);
   max-width: 1024px;
   margin: auto;
 }
-
-
+/* Css voor de navigatie balk/menu. */
 .nav {
   background-color: transparent;
   text-align: center;
@@ -45,7 +43,7 @@ body {
   top: 0;
   z-index: +1;
 }    
-
+/* Css voor de navigatie balk/menu. */
 .nav .deze {
   background-color: rgb(255, 255, 255)  !important;
   color: rgb(255, 255, 255);
@@ -58,14 +56,14 @@ body {
   margin-top: 50px;
   padding-left: 10px;
 }
-
+/* Css voor de navigatie balk/menu. */
 .nav a{
   border: 2px solid rgb(0, 0, 0);
   border-radius: 5px;
   padding: 5px;
   margin-top: 100px;
 }
-
+/* Css voor de logo helemaal bovenaan de pagina's. */
 .logo{
   border-image-repeat: no-repeat;
   margin-top: 10px;
@@ -73,7 +71,7 @@ body {
   width: 500px;
   height: 150px;
 }
-
+/* Dit zorgt er voor dat de slideshow goed werkt op de hoofdpagina. */
 .fling-minislide {width:750px; height:200px; overflow:hidden; position:relative; }
 .fling-minislide img{ position:absolute; animation:fling-minislide 15s infinite; opacity:0; width: 750px; height: 200px;}
 
@@ -122,7 +120,7 @@ body {
   margin-top: 125px;
   margin-left: -10px;
 }
-
+/* Css voor de openingstijden op de hoofdpagina. */
 .openingstijden {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 18px;
@@ -132,7 +130,7 @@ body {
   margin-top: 100px;
   padding-left: 10px;
 }
-
+/* Css voor adres op de hoofdpagina. */
 .adres {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 18px;
@@ -152,7 +150,7 @@ p.solid {border-style: solid;}
   color: green;
 }
 
-/* Style inputs with type="text", select elements and textareas */
+/* Deze css geeft alle type text, een kleur. */
 input[type=text], select, textarea {
   width: 100%; 
   padding: 12px; 
@@ -163,8 +161,7 @@ input[type=text], select, textarea {
   margin-bottom: 16px; 
   resize: vertical 
 }
-
-/* Style the submit button with a specific background color etc */
+/* Deze css geeft de submit button een kleur. */
 input[type=submit] {
   background-color: rgb(77, 142, 222);
   color: rgb(255, 255, 255);
@@ -173,13 +170,11 @@ input[type=submit] {
   border-radius: 4px;
   cursor: pointer;
 }
-
-/* When moving the mouse over the submit button, add a darker green color */
+/* Css zorgt er voor dat als je over de submit button clickt dat hij een kleur krijgt. */
 input[type=sumbit]:hover {
   background-color: rgb(10, 62, 125);
 }
-
-/* Add a background color and some padding around the form */
+/* Css geeft de achtergrond kleur op de pagina: form. */
 .container {
   border-radius: 5px;
   background-color: rgb(242, 242, 242);
@@ -238,7 +233,7 @@ span.psw {
   padding-top: 16px;
 }
 
-/* Change styles for span and cancel button on extra small screens */
+/* Change styles for span and cancel button on extra small screens. */
 @media screen and (max-width: 300px) {
 span.psw {
   display: block;
@@ -248,32 +243,31 @@ span.psw {
   width: 100%;
 }
 }
-
+/* Deze css zorgt er voor dat de newslist op de hoofdpagina goed staat. */
 .newslist {
   border-style: solid;
   font-size: 16px;
   margin-top: 30px;
   padding-left: 10px;
 }
-
+/* Css voor border op bepaalde pagina's. */
 .border2 {
   border-style: solid;
   padding-left: 10px;
   
 }
-
+/* Css voor border op bepaalde pagina's. */
 .border1 {
   border-style: solid;
   padding-left: 10px;
 }
-
+/* Css voor border op bepaalde pagina's. */
 .border3 {
   border-style: solid;
   padding-left: 10px;
 }
-
+/* Deze css zorgt er voor dat de tekst goed staat bij de inlog pagina. */
 .account {
   text-align: center;
   padding-left: 270px;
 }
-
