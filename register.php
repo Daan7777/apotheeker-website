@@ -1,23 +1,23 @@
 <?php
     include("includes/databaselink.php");
-    //als formulier verzonden
+    /* Als formulier verzonden. */
     if (!empty($_POST['username']) && !empty($_POST['password'])) {
-    //controleer wachtwoord
+    /* Controleer wachtwoord. */
     if ($gebruikers[$_POST['username']] == $_POST['password']) {
         $cookie['username'] = $_POST['username'];
         $cookie['password'] = $_POST['password'];
-        //zet cookie
+        /* Zet cookie. */
         setcookie('login', serialize($cookie), time() + 60*60*24*7*2, '/');
-        //login is gelukt
+        /* Login is gelukt. */
         $login_correct = TRUE;
     }
-    //wachtwoord niet correct
+    /* Wachtwoord niet correct. */
     else {
         $login_error = TRUE;
     }
     }
 ?> 
-<!DOCTYPE HTML>
+<!DOCTYPE HTML> <!-- Dit is allemaal voor het register. -->
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">

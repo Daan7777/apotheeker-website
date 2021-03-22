@@ -11,7 +11,7 @@
       Include ("includes/menu.php");  
     ?>
   <br>
-  <div class="container">
+  <div class="container"> <!-- Hier staan alle inputs in de forum. -->
   <form action="connect.php" method="post">
     <label for="fname">Naam</label>
       <input type="text" id="fname" name="firstname" placeholder="Uw naam.." required>

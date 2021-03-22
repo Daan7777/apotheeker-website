@@ -1,9 +1,8 @@
-<?php
+<?php /* Dit is de include voor alle news items op de hoofd pagina. */
   $sql = "SELECT * FROM `news` ORDER BY `news`.`Insert_date` DESC";
     $result = $conn->query($sql);
 
     if ($result->num_rows > 0) {
-      // output data of each row
       while($row = $result->fetch_assoc()) {
         echo " <div class='news'><a href='". $row["Link"]."'target='_blank'  >" . $row["Title"].  $row["Information"]. "</a></div><br>";
       }

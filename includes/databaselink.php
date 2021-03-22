@@ -1,4 +1,4 @@
-<?php
+<?php /* Dit is de include voor de database link. */
 $dbhost = "localhost";
 $dbuser = "root";
 $dbpass = "";

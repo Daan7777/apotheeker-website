@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html> <!-- Dit is de medicine overvieuw waar alle medicijnen op de pagina word gezet. -->
     <html lang="en">
     <head>
         <meta charset="UTF-8">
@@ -17,7 +17,7 @@
     <div
         class="border2">
     </body>
-    <?php
+    <?php /* Dit zijn de includes voor de databaselink + de medicijnen. */
         include("includes/databaselink.php");
         include("includes/medicines.php");
     ?>

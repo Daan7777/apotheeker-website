@@ -10,7 +10,7 @@
     <?php
       Include ("includes/menu.php");
     ?>
-    <div class="fling-minislide"> <!-- Dit is onze slideshow -->
+    <div class="fling-minislide"> <!-- Dit is onze slideshow. -->
       <img src="pictures/slideshowfoto5.jpg" alt="Slide 5" />
       <img src="pictures/slideshowfoto6.jpg" alt="Slide 6" />
       <img src="pictures/slideshowfoto7.jpg" alt="Slide 7" />
@@ -23,7 +23,7 @@
         Onze service
       </p>
     </div>
-      <div class="nav2"> <!-- Dit is het 2e navigatie menu -->
+      <div class="nav2"> <!-- Dit is het 2e navigatie menu. -->
       <a href="collectionservice.php"> Herhaalservice </a>
       <a href="medicineoverview.php">Medicijnoverzicht</a>
       <a href="form.php">Formulier</a>
@@ -37,7 +37,7 @@
     </div>  
     <div class="newslist">
       Nieuws: <br><br> 
-      <?php /* Dit zijn de PHP includes */
+      <?php /* Dit zijn de PHP includes. */
       include("includes/databaselink.php");
       include("includes/news.php");
       ?>

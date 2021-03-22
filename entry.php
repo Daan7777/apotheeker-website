@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html> <!-- Dit is voor het inlogen etc. -->
      <html lang="en">
           <head>
                <meta charset="UTF-8">

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html> <!-- In deze file word de tekst uit de database gehaald en op de website getoond. -->
     <html lang="en">
     <head>
         <meta charset="UTF-8">
@@ -18,7 +18,6 @@
             $sql = "SELECT * FROM `service`  ";
             $result = $conn->query($sql);
                 if ($result->num_rows > 0) {
-                // output data of each row
                 while($row = $result->fetch_assoc()) {
                     echo "". $row["information"]. "<br>"; 
                 }

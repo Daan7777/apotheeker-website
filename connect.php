@@ -1,4 +1,4 @@
-<?php 
+<?php /* Dit is de connect file die de informatie uit form.php doorstuurd naar de database. */
     include("includes/databaselink.php");
 
         $Firstname = $_POST['firstname'];
@@ -13,7 +13,7 @@
     }
         else
     {}
-    // Hier komt de code om de data uit de formulier naar de database te sturen
+    /* Hier komt de code om de data uit de formulier naar de database te sturen. */
     $sql = "INSERT INTO `user` (`id`, `firstname`, `lastname`, `mail` , `aanhef`, `subject`) VALUES (NULL, '$Firstname', '$Lastname', '$mail', '$aanhef', '$Subject') ";
     $result = $conn->query($sql);{
 

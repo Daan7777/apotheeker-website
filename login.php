@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html> <!-- Dit is de login file. -->
      <html lang="en">
      <head>
           <meta charset="UTF-8">
@@ -96,8 +96,7 @@
                if(mysqli_num_rows($result) > 0)  
           {  
                $_SESSION['username'] = $username;  
-               header("location:index.php");  
-               //echo '<script>alert("nice User Details")</script>';  
+               header("location:index.php");    
           }  
                else  
           {  

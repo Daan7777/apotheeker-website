@@ -4,7 +4,7 @@
     $url_array =  explode('/', $_SERVER['REQUEST_URI']) ;
     $url = end($url_array);  
     if($currect_page == $url){
-        echo 'deze'; //class name in css 
+        echo 'deze'; 
     } 
     }
 ?>

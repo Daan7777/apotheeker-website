@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html> <!-- In deze file word de tekst uit de database gehaald en dan op de website getoond. -->
     <html lang="en">
     <head>
         <meta charset="UTF-8">
@@ -16,13 +16,12 @@
         </div>
         <div 
             class="border1">
-        <?php
+        <?php /* Link uit de database. */
             include("includes/databaselink.php");
             $sql = "SELECT * FROM `voorlichting`  ";
             $result = $conn->query($sql);
             
             if ($result->num_rows > 0) {
-            // output data of each row
             while($row = $result->fetch_assoc()) {
             echo "". $row["information"]. "<br>";
             }

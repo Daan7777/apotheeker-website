@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html> <!-- Dit zijn de settings voor de slide show op de hoofdpagine. -->
     <html lang="en">
     <head>
         <meta charset="UTF-8">
