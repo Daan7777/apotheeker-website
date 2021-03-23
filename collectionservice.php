@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html> <!-- Dit is herhaalservice, doet nog niks. -->
     <html lang="en">
     <head>
         <meta charset="UTF-8">
