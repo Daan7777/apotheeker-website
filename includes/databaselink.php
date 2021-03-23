@@ -4,9 +4,9 @@ $dbuser = "root";
 $dbpass = "";
 $db = "apotheek";
 
-// Create connection
+/* Connectie aanmaken. */
 $conn = new mysqli($dbhost, $dbuser, $dbpass, $db);
-// Check connection
+/* Connectie controleren. */
 if ($conn->connect_error) {
 die("Connection failed: " . $conn->connect_error);
 }
